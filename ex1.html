@@ -5,13 +5,28 @@
 </head>
 
 <body>
-    <p>JavaScript Euler solutions</p>
+    <p>JavaScript</p>
+    <h1 id = "test">Tester</h1>
     <script>
         alert("Starting");
         //number test = 1;
         //alert(test);
-        document.write('hello, world!');
+        document.getElementById('test').innerHTML = "Hello World";
+        console.log("Printed hello world");
+        var date = Date();
+        console.log(date);
+        console.log(document.baseURI);
+        var h = window.outerHeight;
+        //document.getElementById('output').innerHTML= h;
+        rHTML = "Hello World";
+        var name = prompt("What is your name?");
+        console.log('name is: ' + name);
+        document.write("<h1>" + name + "</h1>");
+        var paragraphs = document.getElementsByTagName('p');
+        document.write('paragraphs: ' + paragraphs.length + '<br>');
+        var links = document.getElementsByTagName('a'); // get all links
+        document.write('there are this many links: ' + links.length)
     </script>
-
+    <p>What happens if you have two elements with id = "test"?</p>
 </body>
 </html>
